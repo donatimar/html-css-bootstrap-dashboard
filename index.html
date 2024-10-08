@@ -49,34 +49,21 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+              <a class="nav-link active" aria-current="page" href="#"
+                >Catalogo Libri</a
               >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              <a class="nav-link" href="#">Anagrafica Utenti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Storico Prestiti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
             </li>
           </ul>
+
           <form class="d-flex" role="search">
             <input
               class="form-control me-2 bg-dark text-light"
@@ -84,7 +71,7 @@
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-light" type="submit">Search</button>
+            <button class="btn btn-outline-light" type="submit">Cerca</button>
           </form>
         </div>
       </div>
@@ -92,22 +79,22 @@
     <!--  FINE NAVBAR -->
 
     <!-- TITLE PAGE -->
-    <div class="d-flex justify-content-between align-items-center px-4 mb-3">
-      <div class="h1 fs-2">Catalogo Libri</div>
-      <button type="button" class="btn btn-primary">Aggiungi Libro</button>
-    </div>
-    <!--  FINE TITLE PAGE -->
-
     <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="h1 fs-2">Catalogo Libri</div>
+        <button type="button" class="btn btn-primary">Aggiungi Libro</button>
+      </div>
+      <!--  FINE TITLE PAGE -->
+
       <table class="table table-striped">
         <thead>
           <tr>
-            <th scope="col" class="col-6">Titolo</th>
-            <th scope="col" class="d-none d-md-table-cell col-md-2">
+            <th scope="col" class="col-6 col-md-6 col-lg-6">Titolo</th>
+            <th scope="col" class="d-none d-md-table-cell col-md-2 col-lg-2">
               Data Prestito
             </th>
-            <th scope="col" class="col-2">Stato</th>
-            <th scope="col" class="col-2">Azioni</th>
+            <th scope="col" class="col-3 col-md-2 col-lg-3">Stato</th>
+            <th scope="col" class="col-3 col-md-2 col-lg-1">Azioni</th>
           </tr>
         </thead>
         <tbody>
@@ -152,7 +139,9 @@
           <tr>
             <td>Il signore degli Anelli</td>
             <td class="d-none d-md-table-cell">18/10/2023</td>
-            <td><span class="badge text-bg-warning">In prestito</span></td>
+            <td>
+              <span class="badge text-bg-warning text-light">In prestito</span>
+            </td>
             <td class="d-flex justify-content-start">
               <button
                 type="button"
@@ -228,7 +217,9 @@
           <tr>
             <td>La Divina Commedia</td>
             <td class="d-none d-md-table-cell">21/09/2023</td>
-            <td><span class="badge text-bg-warning">In prestito</span></td>
+            <td>
+              <span class="badge text-bg-warning text-light">In prestito</span>
+            </td>
             <td class="d-flex justify-content-start">
               <button
                 type="button"
@@ -285,7 +276,9 @@
           <tr>
             <td>Le Cronache di Narnia: il Leone, la Strega e l'Armadio</td>
             <td class="d-none d-md-table-cell">25/07/2023</td>
-            <td><span class="badge text-bg-warning">In prestito</span></td>
+            <td>
+              <span class="badge text-bg-warning text-light">In prestito</span>
+            </td>
             <td class="d-flex justify-content-start">
               <button
                 type="button"
