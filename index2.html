@@ -78,7 +78,7 @@
     <!-- FINE NAVBAR -->
 
     <div class="container">
-      <div class="h1 fs-2 fw-semibold">Nuovo libro</div>
+      <div class="h1 fs-2 fw-semibold mb-4">Nuovo libro</div>
       <div class="row">
         <div class="col-6">
           <form>
@@ -113,7 +113,72 @@
           </form>
         </div>
       </div>
-    </div>
+      <form>
+        <div class="mb-3">
+          <label for="InputTextTitle" class="form-label">Titolo</label>
+          <input
+            type="text"
+            class="form-control"
+            id="InputTextTitle"
+            placeholder="Inserisci il titolo del libro"
+            aria-describedby="TitleHelp"
+          />
+          <div id="titolo italiano" class="form-text">
+            Titolo versione italiana
+          </div>
+        </div>
+      </form>
+      <label for="InputGender" class="form-label">Genere</label>
+      <select class="form-select mb-3" aria-label="GenderHelp">
+        <option selected>Scegli il genere</option>
+        <option value="1">Maschio</option>
+        <option value="2">Femmina</option>
+        <option value="3">Altro</option>
+      </select>
+      <form>
+        <div class="mb-3">
+          <label for="InputYearPublication" class="form-label"
+            >Anno di Pubblicazione</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="InputYearPublication"
+            placeholder="Inserisci l'anno"
+            aria-describedby="YearPublicationHelp"
+          />
+        </div>
+      </form>
+      <form>
+        <div class="mb-3">
+          <label for="InputISBN" class="form-label">ISBN#</label>
+          <input
+            type="text"
+            class="form-control"
+            id="InputISBN"
+            placeholder="Inserisci il codice ISBN#"
+            aria-describedby="ISBNHelp"
+          />
+        </div>
+      </form>
+      <hr />
+      <div class="mb-3">
+        <label for="Note" class="form-label">Note</label>
+        <textarea
+          class="form-control"
+          id="Note"
+          rows="3"
+          placeholder="Inserisci eventuali noti sul libro"
+        ></textarea>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Disponibile anche in digitale
+        </label>
+        <button type="button" class="btn btn-primary d-block mt-4">Aggiungi Libro</button>
+      </div>
+      
 
     <!-- SCRIPT JS -->
     <script
