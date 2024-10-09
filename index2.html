@@ -78,9 +78,11 @@
     <!-- FINE NAVBAR -->
 
     <div class="container">
+      <!--  TITLE -->
       <div class="h1 fs-2 fw-semibold mb-4">Nuovo libro</div>
       <div class="row">
         <div class="col-6">
+          <!-- NAME AUTHOR -->
           <form>
             <div class="mb-3">
               <label for="InputTextNameAuthor" class="form-label"
@@ -97,6 +99,7 @@
           </form>
         </div>
         <div class="col-6">
+          <!-- SURNAME AUTHOR -->
           <form>
             <div class="mb-3">
               <label for="InputTextSurnameAuthor" class="form-label"
@@ -113,6 +116,7 @@
           </form>
         </div>
       </div>
+      <!-- BOOK TITLE -->
       <form>
         <div class="mb-3">
           <label for="InputTextTitle" class="form-label">Titolo</label>
@@ -128,40 +132,53 @@
           </div>
         </div>
       </form>
-      <label for="InputGender" class="form-label">Genere</label>
-      <select class="form-select mb-3" aria-label="GenderHelp">
-        <option selected>Scegli il genere</option>
-        <option value="1">Maschio</option>
-        <option value="2">Femmina</option>
-        <option value="3">Altro</option>
-      </select>
-      <form>
-        <div class="mb-3">
-          <label for="InputYearPublication" class="form-label"
-            >Anno di Pubblicazione</label
-          >
-          <input
-            type="text"
-            class="form-control"
-            id="InputYearPublication"
-            placeholder="Inserisci l'anno"
-            aria-describedby="YearPublicationHelp"
-          />
+      <!-- GENDER -->
+      <div class="row">
+        <div class="col-lg-4">
+          <label for="InputGender" class="form-label">Genere</label>
+          <select class="form-select mb-3" aria-label="GenderHelp">
+            <option selected>Scegli il genere</option>
+            <option value="1">Maschio</option>
+            <option value="2">Femmina</option>
+            <option value="3">Altro</option>
+          </select>
         </div>
-      </form>
-      <form>
-        <div class="mb-3">
-          <label for="InputISBN" class="form-label">ISBN#</label>
-          <input
-            type="text"
-            class="form-control"
-            id="InputISBN"
-            placeholder="Inserisci il codice ISBN#"
-            aria-describedby="ISBNHelp"
-          />
+        <!-- YEAR PUBLICATION -->
+        <div class="col-lg-4">
+          <form>
+            <div class="mb-3">
+              <label for="InputYearPublication" class="form-label"
+                >Anno di Pubblicazione</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="InputYearPublication"
+                placeholder="Inserisci l'anno"
+                aria-describedby="YearPublicationHelp"
+              />
+            </div>
+          </form>
         </div>
-      </form>
+        <!-- ISBN -->
+        <div class="col-lg-4">
+          <form>
+            <div class="mb-3">
+              <label for="InputISBN" class="form-label">ISBN#</label>
+              <input
+                type="text"
+                class="form-control"
+                id="InputISBN"
+                placeholder="Inserisci il codice ISBN#"
+                aria-describedby="ISBNHelp"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+
       <hr />
+      <!-- NOTE -->
       <div class="mb-3">
         <label for="Note" class="form-label">Note</label>
         <textarea
@@ -171,14 +188,23 @@
           placeholder="Inserisci eventuali noti sul libro"
         ></textarea>
       </div>
+      <!-- CHECKBOX -->
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
         <label class="form-check-label" for="flexCheckDefault">
           Disponibile anche in digitale
         </label>
-        <button type="button" class="btn btn-primary d-block mt-4">Aggiungi Libro</button>
+        <!-- BUTTON ADD BOOK -->
+        <button type="button" class="btn btn-primary d-block mt-4">
+          Aggiungi Libro
+        </button>
       </div>
-      
+    </div>
 
     <!-- SCRIPT JS -->
     <script
